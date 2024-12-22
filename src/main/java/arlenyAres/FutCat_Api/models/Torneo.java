@@ -48,4 +48,6 @@ public class Torneo {
     @ManyToOne
     @JoinColumn(name = "ID_Usuario")
     private Usuario usuario;
+
+
 }

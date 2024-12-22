@@ -23,4 +23,8 @@ public class TablaPosiciones {
     private int golesEnContra;     // Goles en contra
     private int diferenciaGoles;     // Diferencia de goles
 
+    @ManyToOne
+    @JoinColumn(name = "ID_Torneo")
+    private Torneo torneo;
+
 }
