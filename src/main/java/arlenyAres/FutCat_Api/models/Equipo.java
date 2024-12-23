@@ -31,4 +31,53 @@ public class Equipo {
     @ManyToOne
     @JoinColumn(name = "ID_Torneo")
     private Torneo torneo;
+
+
+    public Integer getIdEquipo() {
+        return idEquipo;
+    }
+
+    public void setIdEquipo(Integer idEquipo) {
+        this.idEquipo = idEquipo;
+    }
+
+    public String getNomEquipo() {
+        return nomEquipo;
+    }
+
+    public void setNomEquipo(String nomEquipo) {
+        this.nomEquipo = nomEquipo;
+    }
+
+    public String getNomEquipoCorto() {
+        return nomEquipoCorto;
+    }
+
+    public void setNomEquipoCorto(String nomEquipoCorto) {
+        this.nomEquipoCorto = nomEquipoCorto;
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public Delegado getDelegado() {
+        return delegado;
+    }
+
+    public void setDelegado(Delegado delegado) {
+        this.delegado = delegado;
+    }
+
+    public Torneo getTorneo() {
+        return torneo;
+    }
+
+    public void setTorneo(Torneo torneo) {
+        this.torneo = torneo;
+    }
 }

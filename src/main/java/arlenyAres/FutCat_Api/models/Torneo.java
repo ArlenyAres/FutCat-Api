@@ -10,6 +10,8 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 public class Torneo {
 
     @Id
@@ -48,6 +50,4 @@ public class Torneo {
     @ManyToOne
     @JoinColumn(name = "ID_Usuario")
     private Usuario usuario;
-
-
 }

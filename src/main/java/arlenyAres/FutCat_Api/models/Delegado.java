@@ -29,4 +29,6 @@ public class Delegado {
 
     @Column(name = "Telefono")
     private String telefono;
+
+
 }

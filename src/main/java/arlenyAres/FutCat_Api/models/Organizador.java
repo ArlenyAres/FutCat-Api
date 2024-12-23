@@ -9,12 +9,13 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Organizador {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_Organizador")
     private Integer idOrganizador;
 
-    @Column(name = "Nombre_Org")
+    @Column(name = "Nombre_Organizador")
     private String nombreOrganizador;
 
     @Column(name = "Tipo_Documento")
