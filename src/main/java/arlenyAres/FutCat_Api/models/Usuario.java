@@ -29,4 +29,12 @@ public class Usuario {
 
     @Column(name = "Contraseña") // OJO con los caracteres especiales
     private String contraseña;
+
+    public Usuario(String nombre, String apellidos, String correo, String username, String contraseña) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.correo = correo;
+        this.username = username;
+        this.contraseña = contraseña;
+    }
 }
